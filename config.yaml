@@ -1,0 +1,16 @@
+data:
+  metadata_path: data/xeno-canto-dataset/Singapore_Birds/Singapore/singapore_birds_combined.json
+  audio_dir: data/xeno-canto-dataset/Singapore_Birds/Singapore/audio_files
+  quality_keep: [A, B, C]
+features:
+  sr: 22050
+  n_mfcc: 20
+split:
+  test_size: 0.15
+  val_size: 0.15
+train:
+  batch_size: 32
+  epochs: 100
+  patience: 10
+  checkpoint_path: birdsong_cnn_best.h5
+  final_model_path: birdsong_cnn_final.h5
